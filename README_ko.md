@@ -1,6 +1,6 @@
 # 프로젝트 소개 (한글) | [Project Introduction (English)](./README.md)
  * 본 프로젝트는 [BELIVVR](https://belivvr.com)에서 [hubs](https://github.com/Hubs-Foundation) 프로젝트를 fork하여 추가 기능을 개발하고, Hubs의 Room, Scene의 자원들을 회원제로 별도의 회원제 클라우드로 서비스를 제공하는 것을 목표 했던 XRCLOUD(https://xrcloud.app) 오픈소스 프로젝트입니다.
- * 2025년 2월, BELIVVR는 기업의 운영이 어려워 추가 개발을 진행하지 않으므로 오픈 소스(https://github.com/belivvr/xrcloud)로 공개 합니다.
+ * 2025년 2월, BELIVVR는 기업의 운영이 어려워 추가 개발을 진행하지 않으므로 오픈 소스(https://github.com/belivvr/xrcloud) 로 공개 합니다.
  * 기존 개발 서비스를 해드린 파트너들을 위한 상세 문서화 서비스이며, 작게나마 웹 메타버스 오픈소스 생태계에 기여를 하기 위함입니다.
  * HubsFoundation에 별도의 PR을 보낼 여력은 없었으니 참고 바라며 XRCLOUD 서비스는 2025년 9월까지 운용할 수 있는 서버를 확보한 상황이나 이후 서비스 계획에 대해서는 확정된 바가 없습니다. 2025년 12월까지 서비스를 약속한 파트너들에게는 기술 지원을 진행합니다.
  * 추가 문의는 BELIVVR의 대표 였던 양병석 대표(fstory97@gmail.com)에게 문의 바랍니다.
