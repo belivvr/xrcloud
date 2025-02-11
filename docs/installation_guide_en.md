@@ -306,8 +306,8 @@ VALUES (
 );
 ```
 
-## API Update
-* XRCLOUD's API Documentation uses Redocly and is documented in api.json following OpenAPI specifications.
+## API Documentation Update
+* XRCLOUD's API Documentation uses Redocly and is documented in api.json files following OpenAPI specifications.
 
 ```
 # English API documentation
@@ -315,7 +315,7 @@ VALUES (
 # Korean API documentation
 ~/xrcloud/xrcloud-backend/docs/api/ko/api.json
 ```
-* Execute the following shell script to automatically generate index.html and update API documentation:
+* Running the shell script below will automatically generate index.html and api.md files to update the API documentation:
 ```bash
 cd ~/xrcloud/xrcloud-backend
 sudo bash regenerate_api_docs.sh

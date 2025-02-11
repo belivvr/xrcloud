@@ -6,11 +6,19 @@
 * For further inquiries, please contact the former CEO of BELIVVR, Byungseok Yang (fstory97@gmail.com).
 
 # Installation and Operation
-* Please refer to the [Installation and Operation Guide](./docs/installation_guide_ko.md).
+* This project has dependencies on multiple subRepository projects. The XRCLOUD project follows the same license, and projects forked from hubsFoundation follow the licenses of their original projects.
+* For detailed installation and operation methods, please refer to the [Installation and Operation Guide](./docs/installation_guide_en.md).
 
-# License
+# License and Patents
 * Subprojects including hubs follow the licenses of their original projects.
-* XRCLOUD follows the MIT license.
+* XRCLOUD follows the Apache License 2.0.
+* Patent Notice:
+  - The use of this software does not grant any rights to BELIVVR's patents.
+  - While this software is released under the Apache 2.0 License, this license does not provide complete immunity from patent claims.
+  - BELIVVR holds several patents related to certain functionalities within this system.
+  - Separate patent licenses may be required for commercial use of features covered by these patents.
+  - For patent licensing inquiries, please contact: fstory97@gmail.com
+* For complete license and patent information, please refer to the LICENSE and NOTICE files.
 
 # Frameworks Used in XRCLOUD
 * XRCLOUD-BACKEND: Nest.js, Node.js, PostgreSQL, Docker, REDIS
@@ -35,7 +43,7 @@
 <img src="./docs/images/xrcloud_dashboard.png" alt="XRCLOUD service dashboard">
 
 ## OpenAPI Service for Developers (xrcloud)
-* Provides APIs for managing projects, scenes, and rooms for 3rd party developers. For API details, please refer to the [XRCLOUD API Documentation](https://github.com/belivvr/xrcloud/xrcloud-backend/docs/api_ko.html).
+* Provides APIs for managing projects, scenes, and rooms for 3rd party developers. For API details, please refer to the [XRCLOUD API Documentation](https://github.com/belivvr/xrcloud-backend/blob/main/docs/api/en/api.md).
 * Provides APIs related to 3rd party members, allowing the creation of a creative platform through separate user management on the 3rd party developer's platform.
 * It is possible to give differentiated permissions by dividing host and guest users.
 * It is possible to generate expiring private URLs and continuously public URLs.
@@ -120,4 +128,4 @@ avatarUrl=https://belivvr.github.io/files/Avatars/VVRI_SD_Ani_Ribbon_ReAnimaion_
 * [Suncheon Eco Net](https://suncheoneco.net/ko/): A metaverse platform for Suncheon city, showcasing the ecological environment of Suncheon Bay and providing materials for children's environmental education programs using the metaverse.
 
 ## Additional Technical Inquiries
-* For additional technical inquiries, please contact the former CEO of BELIVVR, Byungseok Yang (fstory97@gmail.com).
+* For additional technical inquiries, please contact the former CEO of BELIVVR, Luke Yang (fstory97@gmail.com).
