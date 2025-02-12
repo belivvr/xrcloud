@@ -1,4 +1,4 @@
-# Installation and Operation Guide (English) | [설치 및 운용 가이드 (한글)](./installation_guide_ko.md)
+# Installation and Operation Guide (English) | [한글](./installation_guide_ko.md)
 
 # Project Description
 * This project is an open-source XRCLOUD project (https://xrcloud.app) that was forked from the [hubs](https://github.com/Hubs-Foundation) project by [BELIVVR](https://belivvr.com). The goal was to develop additional features and provide Hubs' Room and Scene resources as a membership-based cloud service.
@@ -344,4 +344,15 @@ sudo bash backup.sh
 ```bash
 # crontab example
 0 * * * /home/belivvr/xrcloud/xrcloud-backend/backup.sh
+```
+
+## Downloading Resources and Server Migration Method for Spoke Project
+* When exporting a Spoke project, resources within the Spoke file use relative paths. When moving to another server, if the original server's resources are missing, they won't display properly due to dead links.
+* Therefore, it is recommended to separately back up resource files.
+* We have created a separate [script for downloading Spoke project resources](../downloadResourcesFromSpokeFile.sh) for reference.
+* When running this script, it creates a resources folder and downloads the resources.
+* After downloading files with this script, move them to an online-accessible space, and since the spoke file is in plain text JSON format, use a text editor to replace the resource paths, then import the spoke file again.
+
+```bash
+bash downloadResourcesFromSpokeFile.sh {spoke_file_path}
 ```

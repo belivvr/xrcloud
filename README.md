@@ -1,4 +1,4 @@
-# Project Introduction (English)  |  [프로젝트 소개 (한글)](./README_ko.md)
+# Project Introduction (English)  |  [한글](./README_ko.md)
 * This project is an open-source project called XRCLOUD, which was developed by forking the [Hubs](https://github.com/Hubs-Foundation) project from [BELIVVR](https://belivvr.com). The goal was to develop additional features and provide resources of Hubs Rooms and Scenes as a membership-based cloud service.
 * As of February 2025, BELIVVR has decided not to continue further development due to business challenges and has released it as open source.
 * This is a detailed documentation service for partners who have been provided with development services, and it aims to contribute to the web metaverse open-source ecosystem, albeit in a small way.
@@ -126,6 +126,9 @@ avatarUrl=https://belivvr.github.io/files/Avatars/VVRI_SD_Ani_Ribbon_ReAnimaion_
 * [Meta Track](https://meta-track.kr): A metaverse education platform completed in 2024, allowing teachers to create classes and register metaverse classes and attendance by matching with subject-specific metaverse spaces created by administrators.
 * [ClassV](https://classv.school/ko): A metaverse education program operation platform developed by BELIVVR, allowing class creation and sharing of student-created content.
 * [Suncheon Eco Net](https://suncheoneco.net/ko/): A metaverse platform for Suncheon city, showcasing the ecological environment of Suncheon Bay and providing materials for children's environmental education programs using the metaverse.
-
+ 
+ ## Available Space (Scene/Spoke) Data Release
+ * For space (Scene/Spoke) data available according to CCL, please refer to [Space Resources](./docs/spoke_files/README.md).
+ 
 ## Additional Technical Inquiries
 * For additional technical inquiries, please contact the former CEO of BELIVVR, Luke Yang (fstory97@gmail.com).

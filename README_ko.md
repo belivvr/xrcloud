@@ -1,4 +1,4 @@
-# 프로젝트 소개 (한글) | [Project Introduction (English)](./README.md)
+# 프로젝트 소개 (한글) | [English](./README.md)
  * 본 프로젝트는 [BELIVVR](https://belivvr.com)에서 [hubs](https://github.com/Hubs-Foundation) 프로젝트를 fork하여 추가 기능을 개발하고, Hubs의 Room, Scene의 자원들을 회원제로 별도의 회원제 클라우드로 서비스를 제공하는 것을 목표 했던 XRCLOUD(https://xrcloud.app) 오픈소스 프로젝트입니다.
  * 2025년 2월, BELIVVR는 기업의 운영이 어려워 추가 개발을 진행하지 않으므로 오픈 소스(https://github.com/belivvr/xrcloud) 로 공개 합니다.
  * 기존 개발 서비스를 해드린 파트너들을 위한 상세 문서화 서비스이며, 작게나마 웹 메타버스 오픈소스 생태계에 기여를 하기 위함입니다.
@@ -127,11 +127,14 @@ avatarUrl=https://belivvr.github.io/files/Avatars/VVRI_SD_Ani_Ribbon_ReAnimaion_
 
 
  ## 적용 사례들 
-* 적용 사례들에 대한 상세 페이지는 [적용 사례](./docs/applied_cases.md)를 참고 바랍니다.
+* 적용 사례들에 대한 상세 페이지는 [적용 사례](./docs/applied_cases_ko.md)를 참고 바랍니다.
 * [CNU메타버시티 (국립 전남대학교 메타버스)](https://cnumeta.jnu.ac.kr/) : 2022년부터 개발된 가상 캠퍼스로, 학생들의 창작 기능, 템플릿 룸을 활용한 개인 공간, 메타버스 창작 대회, 메타버스 졸업식 및 입학식 등을 제공합니다. 본 프로젝트를 개발하는데 가장 많은 도움을 받은 프로젝트였습니다.
 * [메타트랙](https://meta-track.kr) : 2024년에 완성된 메타버스 교육 플랫폼으로, 교사가 수업을 생성하고 관리자가 만든 과목별 메타버스 공간과 매칭하여 메타버스 수업 등록 및 출석이 가능합니다. 
 * [클래스브이](https://classv.school/ko): BELIVVR에서 개발한 메타버스 교육 프로그램 운영 플랫폼으로, 수업 생성과 학생들의 창작 콘텐츠 공유가 가능합니다.
 * [순천에코넷](https://suncheoneco.net/ko/): 순천시의 메타버스 플랫폼으로, 순천만의 생태환경을 보여주고 메타버스를 활용한 어린이 환경교육 프로그램 자료를 제공합니다.
+
+ ## 사용 가능한 공간(Scene/Spoke) 데이터 공개
+ * CCL에 따라 사용가능한 공간(Scene/Spoke) 데이터는 [공간 자료](./docs/spoke_files/README_ko.md)를 참고 바랍니다.
 
  ## 추가 기술 문의 
  * 추가 기술 문의는 BELIVVR의 대표 였던 양병석(fstory97@gmail.com)에게 문의 바랍니다.

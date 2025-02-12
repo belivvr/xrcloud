@@ -1,5 +1,5 @@
 
-# 설치 및 운용 가이드 (한글) | [Installation and Operation Guide (English)](./installation_guide_en.md)
+# 설치 및 운용 가이드 (한글) | [English](./installation_guide_en.md)
 
 # 프로젝트 설명
  * 본 프로젝트는 [BELIVVR](https://belivvr.com)에서 [hubs](https://github.com/Hubs-Foundation) 프로젝트를 fork하여 추가 기능을 개발하고, Hubs의 Room, Scene의 자원들을 회원제로 별도의 회원제 클라우드로 서비스를 제공하는 것을 목표 했던 XRCLOUD(https://xrcloud.app) 오픈소스 프로젝트로 해당 프로젝트입니다.
@@ -352,3 +352,14 @@ sudo bash backup.sh
 # crontab 예시
  0 * * * /home/belivvr/xrcloud/xrcloud-backend/backup.sh
 ```
+
+## Spoke 프로젝트의 리소스 다운로드와 서버 마이그레이션 방법
+ * Spoke 프로젝트를 export할 경우, 다운로드 되는 Spoke파일내의 리소스는 상대 경로로 되어 있어 다른 서버로 이동시, 원본 서버의 리소스들이 없을 경우, 데드링크로 인해 정상적으로 보이지 않습니다.
+ * 때문에 백업시 리소스 파일을 별도로 백업을 하는 것을 권장합니다.
+ * 이를 위해 별도의 [Spoke프로젝트의 리소스를 다운로드 하는 스크립트](../downloadResourcesFromSpokeFile.sh)도 만들어 두었으니 참고 바랍니다.
+ * 해당 스크립트를 실행시 resources 폴더를 만들고 리소스들을 다운로드 합니다. 
+ * 해당 스크립트로 다운로드된 파일들은 온라인으로 억세스 가능한 공간에 옮기시고, spoke파일은 plain text의 json 형식이니, 텍스트 편집기로 리소스의 경로를 replace하시고, spoke파일을 다시 import 하시면 됩니다.
+
+ ```bash
+  bash downloadResourcesFromSpokeFile.sh {spoke_file_path}
+ ```
