@@ -10,7 +10,7 @@
 # Free Spaces Available on XRCLOUD
   * We publicly share spaces developed by BELIVVR and those that were serviced by Mozilla hubs, which can be used for Remix based on CCL.
   * Under the CCL license, you are free to use them, but please make sure to credit the original creator.
-  * Spoke space data is publicly available under the [data](./data/) folder along with resources (resources.tar.gz).
+  * Spoke space data is publicly available under the [Google Drive Link](https://drive.google.com/drive/folders/1-Vjgc7Yh_VmHBRcnGrnJaprJsNZrSDID) along with resources (resources.tar.gz).
 
   ## Large Convention Center
 
