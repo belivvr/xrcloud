@@ -121,7 +121,7 @@ avatarUrl=https://belivvr.github.io/files/Avatars/VVRI_SD_Ani_Ribbon_ReAnimaion_
   * When used with the proximity trigger, it is possible to implement a natural portal transition feature that moves to another room at a specific location.
 
 ## Applied Cases
-* For detailed pages on applied cases, please refer to [Applied Cases](./docs/applied_cases.md).
+* For detailed pages on applied cases, please refer to [Applied Cases](./docs/applied_cases_en.md).
 * [CNU Metaversity (Chonnam National University Metaverse)](https://cnumeta.jnu.ac.kr/): A virtual campus developed since 2022, offering student creation features, personal spaces using template rooms, metaverse creation competitions, and metaverse graduation and entrance ceremonies. This project received the most help in its development.
 * [Meta Track](https://meta-track.kr): A metaverse education platform completed in 2024, allowing teachers to create classes and register metaverse classes and attendance by matching with subject-specific metaverse spaces created by administrators.
 * [ClassV](https://classv.school/ko): A metaverse education program operation platform developed by BELIVVR, allowing class creation and sharing of student-created content.
