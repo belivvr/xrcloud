@@ -1,4 +1,4 @@
-# XRCLOUD 적용 사례 (한글) | [English](./applied_cases.md)
+# XRCLOUD 적용 사례 (한글) | [English](./applied_cases_en.md)
 
 # 적용 사례들
  * 적용 사례들을 참고하시면 프로젝트의 적용 방향을 확인하실 수 있습니다.
