@@ -135,7 +135,7 @@ Data transmitted from Meta-Track is as follows, separated by '|'
      <img src="./images/suncheoneco_exibition.png" alt="Suncheon Econet Exhibition Hall"/>
 
 # 5. Appendix
-* [62 Spaces (Spoke Projects) Editable and Usable in XRCLOUD(Hubs)](./spoke_project_resources/README_en.md)
+* [Public Spoke Spaces Available on XRCLOUD](./spoke_files/README.md)
 
 # 6. Conclusion
 * BELIVVR first encountered Hubs and began operations around September 2022, during the COVID-19 pandemic. After conducting metaverse events through the COMINGM project with Korea's Hyundai Department Store Group, we planned and developed the XRCLOUD service. While it wasn't a short period, commercialization was delayed due to internal circumstances, and BELIVVR's business operations came to an end. Hoping that our projects would contribute to the popularization and development of web metaverse technology, we open-sourced XRCLOUD and created technical documentation. We thank everyone who conducted and supported wonderful projects with BELIVVR.
