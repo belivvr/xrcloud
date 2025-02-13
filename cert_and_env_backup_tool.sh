@@ -36,8 +36,8 @@ backup() {
         fi
     fi
 
-    # Compress into a tar file
-    tar --overwrite -cvf $backup_file -C $backup_dir .
+    # Compress into a tar file with absolute paths
+    (cd $backup_dir && tar --overwrite -cvf ../$backup_file .)
     echo "Backup completed: $backup_file"
 
     # Remove temporary backup directory
@@ -48,8 +48,12 @@ backup() {
 restore() {
     echo "Starting restore..."
     if [ -f $backup_file ]; then
-        tar --overwrite -xvf $backup_file -C .
-        
+        # Remove the existing backup directory if it exists
+        rm -rf $backup_dir
+
+        # Extract the backup file into the current directory
+        tar --overwrite -xvf $backup_file
+
         # restored files list
         echo "Files restored:"
         tar -tf $backup_file
