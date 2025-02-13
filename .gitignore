@@ -1,0 +1,28 @@
+# Ignore all .env files
+*.env
+*.env.*
+
+# 로그 파일
+*.log
+proxy/access.log
+proxy/error.log
+logs/
+**/logs/
+
+# Ignore certs directory and its contents
+certs/
+
+postgrest/postgrest.conf
+nginx/nginx.conf
+
+# Ignore proxy directory and its contents
+proxy/*.log
+
+# Certificates
+*.pem
+*.crt
+*.key
+*.jwk.json
+certs/
+
+!keygen/
