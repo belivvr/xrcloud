@@ -150,7 +150,7 @@
      <img src="./images/suncheoneco_exibition.png" alt="순천 에코넷 전시관"/>      
 
 # 5. 부록
- *  [XXRCLOUD에서 이용 가능한 Spoke 공개 공간 자료](./spoke_files/README_ko.md)
+ *  [XRCLOUD에서 이용 가능한 Spoke 공개 공간 자료](./spoke_files/README_ko.md)
 
 # 6. 맺음말
  * BELIVVR에서 Hubs를 처음만나 사업을 진행 한 것은 코로나 바이러스가 휩쓸던 2022년 9월경이었습니다. 한국의 현대백화점그룹의 COMINGM 프로젝트를 통해 메타버스 이벤트를 진행 후 XRCLOUD서비스를 기획하고 개발을 진행했습니다. 작지 않은 시간이었지만 내부 사정으로 상용화까지는 시간이 지연되었고, BELIVVR의 사업을 종료하게 되었습니다. 그 동안 진행했던 프로젝트들이 웹메타버스 기술 대중화와 발전에 조금이라도 도움이 되길 바라는 마음에 XRCLOUD를 오픈소스화 하였고, 기술 문서들을 작성해두었습니다. BELIVVR와 함께 멋진 프로젝트를 진행하고 지원해주신 분들께 감사를 드립니다.

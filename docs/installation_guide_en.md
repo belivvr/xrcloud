@@ -155,19 +155,19 @@ BLOCK_ROOT_SIGNIN="false"
 ```
 
 ### Installation
-* The installation command is rebuild.sh, with the first argument being the environment configuration file and the second argument being the installation scope. The second argument allows separate installation of hubs or dialog servers. If no second argument is provided, it installs everything on that server.
+* The installation command is `rebuild_all.sh`, with the first argument being the environment configuration file and the second argument being the installation scope. The second argument allows separate installation of hubs or dialog servers. If no second argument is provided, it installs everything on that server.
 
 ```bash
 # Full installation (assuming .env.sample was copied to .env.dev)
 cd ~/xrcloud/hubs-all-in-one$
-sudo bash rebuild.sh .env.dev
+sudo bash rebuild_all.sh .env.dev
 ```
 * When installing only hubs with dialog server separated based on .env.dev file, use 'dialog' instead of 'hubs' as the second argument on the dialog server.
 
 ```bash
 # Install hubs server only
 cd ~/xrcloud/hubs-all-in-one$
-sudo bash rebuild.sh .env.dev hubs
+sudo bash rebuild_all.sh .env.dev hubs
 ```
 
 ### Setting Up Admin Account for XRCLOUD Connection
@@ -365,19 +365,14 @@ To back up and restore the environment configuration of your existing server, yo
 
 - **Backup**: To create a backup of your current environment configuration, run the following command:
   ```bash
-  ./cert_and_env_backup_tool.sh backup
+  bash cert_and_env_backup_tool.sh backup
   ```
   Add `-f` to force overwrite if a backup file already exists:
   ```bash
-  ./cert_and_env_backup_tool.sh backup -f
+  bash cert_and_env_backup_tool.sh backup -f
   ```
 
 - **Restore**: To restore the environment configuration from a backup, use the following command with `sudo`:
   ```bash
-  sudo ./cert_and_env_backup_tool.sh restore
+  sudo bash cert_and_env_backup_tool.sh restore
   ```
-
-Ensure that the script has execute permissions:
-```bash
-chmod +x cert_and_env_backup_tool.sh
-```

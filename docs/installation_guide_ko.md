@@ -157,19 +157,19 @@ BLOCK_ROOT_SIGNIN="false"
 ```
 
 ### 설치
-* 설치 명령어는 rebuild.sh 파일이며, 첫번째 인자는 환경설정 파일, 두번째 인자는 설치 범위입니다. 두번째 인자를 통해 hubs나 dialog서버를 분리하여 설치할수 있으며, 아무것도 입력하지 않으면 해당 서버에 전체 설치합니다.
+* 설치 명령어는 rebuild_all.sh 파일이며, 첫번째 인자는 환경설정 파일, 두번째 인자는 설치 범위입니다. 두번째 인자를 통해 hubs나 dialog서버를 분리하여 설치할수 있으며, 아무것도 입력하지 않으면 해당 서버에 전체 설치합니다.
 
 ```bash
 # 전체 설치 (.env.sample 파일을 복사하여 .env.dev 파일을 생성했다고 가정한 경우)
 cd ~/xrcloud/hubs-all-in-one$
-sudo bash rebuild.sh .env.dev 
+sudo bash rebuild_all.sh .env.dev 
 ```
 * .env.dev 파일을 기준으로 Dialog 서버를 분리하여 hubs만 설치하는 경우, dialog서버에서는 두번째 인자에 hubs대신 dialog를 입력합니다.
 
 ```bash
 # hubs 서버만 설치
 cd ~/xrcloud/hubs-all-in-one$
-sudo bash rebuild.sh .env.dev hubs
+sudo bash rebuild_all.sh .env.dev hubs
 ```
 
 ### XRCLOUD와 연결할 어드민 계정 설정
@@ -371,20 +371,16 @@ sudo bash backup.sh
 
 - **백업**: 현재 환경설정을 백업하려면 다음 명령어를 실행하세요:
   ```bash
-  ./cert_and_env_backup_tool.sh backup
+  ./bash cert_and_env_backup_tool.sh backup
   ```
   백업 파일이 이미 존재할 경우 강제로 덮어쓰려면 `-f` 옵션을 추가하세요:
   ```bash
-  ./cert_and_env_backup_tool.sh backup -f
+   bash ./cert_and_env_backup_tool.sh backup -f
   ```
 
 - **복원**: 백업에서 환경설정을 복원하려면 `sudo`와 함께 다음 명령어를 사용하세요:
   ```bash
-  sudo ./cert_and_env_backup_tool.sh restore
+  sudo bash ./cert_and_env_backup_tool.sh restore
   ```
 
-스크립트에 실행 권한을 부여하세요:
-```bash
-chmod +x cert_and_env_backup_tool.sh
-```
 

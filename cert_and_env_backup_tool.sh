@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of file extensions to back up
-backup_extensions=("conf" "pem" "key" "crt" "env.*")
+backup_extensions=("conf" "pem" "key" "crt" "env.*" "env")
 
 # Backup directory and file name
 backup_dir="backup"
