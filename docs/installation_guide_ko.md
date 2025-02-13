@@ -1,4 +1,3 @@
-
 # 설치 및 운용 가이드 (한글) | [English](./installation_guide_en.md)
 
 # 프로젝트 설명
@@ -208,7 +207,7 @@ sudo bash restart_all.sh .env.dev
 ### XRCLOUD 백엔드 빌드 및 배포
  * **환경설정 파일 수정**
    * [~/xrcloud/xrcloud-backend/.env.sample](../xrcloud-backend/.env.sample) 파일을 복사하여 .env.dev 파일이나 .env.prod 파일을 생성하고 수정합니다.
-   * 해당 파일에는 XRCLOUD 가 이용하는 DB의 ID/PW, XRCLOUD API서비스의 도메인, 서비스 파일 저장위치 등 각종 환경설정이 있습니다.   
+   * 해당 파일에는 XRCLOUD 가 이용하는 DB의 ID/PW, XRCLOUD API서버의 도메인, 서비스 파일 저장위치 등 각종 환경설정이 있습니다.   
    * Hubs와 연결에 중요한 계정은 RETICULUM_ADMIN_ID=dev_team@myxrcloud.app 입니다. 위에서 hubs에서 어드민으로 설정했던 계정을 설정합니다.
 
  * **빌드 및 배포** : 백앤드에서 이용하는 DB와 Redis 서버를 먼저 배포하고, 백앤드 API서버를 배포합니다.
@@ -363,3 +362,29 @@ sudo bash backup.sh
  ```bash
   bash downloadResourcesFromSpokeFile.sh {spoke_file_path}
  ```
+
+## 환경설정 백업 및 복원
+
+기존 서버의 환경설정을 백업하고 복원하기 위해 [`cert_and_env_backup_tool.sh`](../cert_and_env_backup_tool.sh) 스크립트를 사용할 수 있습니다. 이 스크립트는 특정 확장자의 설정 파일과 `perms-jwk.json` 파일을 백업하도록 설계되었습니다.
+
+### 사용법
+
+- **백업**: 현재 환경설정을 백업하려면 다음 명령어를 실행하세요:
+  ```bash
+  ./cert_and_env_backup_tool.sh backup
+  ```
+  백업 파일이 이미 존재할 경우 강제로 덮어쓰려면 `-f` 옵션을 추가하세요:
+  ```bash
+  ./cert_and_env_backup_tool.sh backup -f
+  ```
+
+- **복원**: 백업에서 환경설정을 복원하려면 `sudo`와 함께 다음 명령어를 사용하세요:
+  ```bash
+  sudo ./cert_and_env_backup_tool.sh restore
+  ```
+
+스크립트에 실행 권한을 부여하세요:
+```bash
+chmod +x cert_and_env_backup_tool.sh
+```
+
