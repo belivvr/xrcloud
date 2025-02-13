@@ -20,6 +20,9 @@ backup() {
     # perms-jwk.json file backup
     find . -type f -name "perms-jwk.json" -exec cp --parents {} $backup_dir \;
 
+    # Backup xrcloud-backend/backup.sh
+    cp --parents xrcloud-backend/backup.sh $backup_dir
+
     # backup files list
     echo "Files backed up:"
     find $backup_dir -type f
@@ -48,7 +51,8 @@ backup() {
 restore() {
     echo "Starting restore..."
     if [ -f $backup_file ]; then
-        # Remove the existing backup directory if it exists
+        # Remove the existing backup directory if it existsls
+        
         rm -rf $backup_dir
 
         # Extract the backup file into the current directory
