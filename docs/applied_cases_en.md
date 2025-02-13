@@ -95,7 +95,11 @@ Additionally, other Unity-based content required fbx files instead of glb avatar
 
 * This issue led us to consider standardizing avatar formats.
 
-```
+## Learning Data Analysis through User Logging ##
+* XRCLOUD stores user logs and various site activities in a DB via webhook, allowing for the analysis of student learning data to suggest recommended classes.
+
+   <img src="./images/meta_statstics.png" alt="Meta-Track Statistics"/>
+
 * July 29, 2024 Notice Email to Project Developers
 
 According to Meta-Track requirements, we've modified the following:
