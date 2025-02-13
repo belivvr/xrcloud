@@ -17,8 +17,12 @@ backup() {
         find . -type f -name "*.$ext" -exec cp --parents {} $backup_dir \;
     done
 
-    # 추가: perms-jwk.json 파일 백업
+    # perms-jwk.json file backup
     find . -type f -name "perms-jwk.json" -exec cp --parents {} $backup_dir \;
+
+    # backup files list
+    echo "Files backed up:"
+    find $backup_dir -type f
 
     # Check if backup file already exists
     if [ -f $backup_file ]; then
@@ -45,6 +49,11 @@ restore() {
     echo "Starting restore..."
     if [ -f $backup_file ]; then
         tar --overwrite -xvf $backup_file -C .
+        
+        # restored files list
+        echo "Files restored:"
+        tar -tf $backup_file
+
         echo "Restore completed."
     else
         echo "Backup file does not exist: $backup_file"

@@ -359,7 +359,7 @@ bash downloadResourcesFromSpokeFile.sh {spoke_file_path}
 
 ## Backup and Restore Environment Configuration
 
-To back up and restore the environment configuration of your existing server, you can use the [`cert_and_env_backup_tool.sh`](../cert_and_env_backup_tool.sh) script. This script is designed to back up configuration files with specific extensions and the `perms-jwk.json` file.
+To back up and restore the environment configuration of your existing server, you can use the `cert_and_env_backup_tool.sh` script. This script is designed to back up configuration files with specific extensions and the `perms-jwk.json` file.
 
 ### Usage
 

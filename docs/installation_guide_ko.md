@@ -365,7 +365,7 @@ sudo bash backup.sh
 
 ## 환경설정 백업 및 복원
 
-기존 서버의 환경설정을 백업하고 복원하기 위해 [`cert_and_env_backup_tool.sh`](../cert_and_env_backup_tool.sh) 스크립트를 사용할 수 있습니다. 이 스크립트는 특정 확장자의 설정 파일과 `perms-jwk.json` 파일을 백업하도록 설계되었습니다.
+기존 서버의 환경설정을 백업하고 복원하기 위해 `cert_and_env_backup_tool.sh` 스크립트를 사용할 수 있습니다. 이 스크립트는 특정 확장자의 설정 파일과 `perms-jwk.json` 파일을 백업하도록 설계되었습니다.
 
 ### 사용법
 
