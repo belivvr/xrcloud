@@ -18,6 +18,9 @@ nginx/nginx.conf
 # Ignore proxy directory and its contents
 proxy/*.log
 
+# backup files
+*.tar
+*.tar.gz
 # Certificates
 *.pem
 *.crt
